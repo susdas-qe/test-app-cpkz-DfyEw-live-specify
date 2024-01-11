@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-no-dockerfile-7x36
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-no-dockerfile-7x36
+    app.kubernetes.io/part-of: test-app-cpkz
+  name: nodejs-no-dockerfile-7x36oykd
+spec:
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: nodejs-no-dockerfile-7x36
+    weight: null
+status: {}

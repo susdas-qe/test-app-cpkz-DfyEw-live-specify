@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-no-dockerfile-7x36
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-iwxv-tenant/test-app-cpkz/nodejs-no-dockerfile-7x36@sha256:3b55b4d602823c205a42c28a309d93e97ca6abda14bfd987c0d3c87a78b8ffa7
+        name: my-nodejs
+        resources: {}
+status: {}
