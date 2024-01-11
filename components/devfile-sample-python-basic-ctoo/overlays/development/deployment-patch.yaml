@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ctoo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-iwxv-tenant/test-app-cpkz/devfile-sample-python-basic-ctoo@sha256:103d9652c78b7522d762b0528b016fff28ce74a828f2376ab8d01c96b40e9070
+        name: my-python
+        resources: {}
+status: {}
